@@ -1,0 +1,39 @@
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 45, 45);
+    color: aliceblue;
+   
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: red;
+}
+
+
+
+.main-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    padding: 2rem;
+    margin:0 auto;
+    
+}
+    
+    .boxes{
+        text-align: center;
+        margin: 5px;
+        padding: 2rem;
+        background-color: black;
+        width: 120px;
+        height: 120px
+    }
+    
+

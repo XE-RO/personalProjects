@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.buttons-container{
+    display: flex;
+    background-color: rgb(0, 136, 255);
+    padding: 1rem;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    grid-auto-columns: 130px;
+}
+.buttons{
+    margin: 3px;
+}
+
+.b1{
+    grid-column: 1/2;
+}
+
+.b2{
+    grid-column:2/3;
+}
+.b3{
+    grid-column: 3/4;
+}

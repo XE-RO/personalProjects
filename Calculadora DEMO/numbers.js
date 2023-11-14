@@ -1,0 +1,59 @@
+export function displayNumbers(){
+    let $screen=document.querySelector(".screen")
+    let input=""
+    document.addEventListener("click",e=>{
+        if(e.target.matches(".b1")){
+            input+="1"  
+        }
+        if(e.target.matches(".b2")){
+            input+="2"    
+        }
+        if(e.target.matches(".b3")){
+            input+="3"    
+        }
+        if(e.target.matches(".b4")){
+            input+="4"    
+        }
+        if(e.target.matches(".b5")){
+            input+="5"    
+        }
+        if(e.target.matches(".b6")){
+            input+="6"    
+        }
+        if(e.target.matches(".b7")){
+            input+="7"    
+        }
+        if(e.target.matches(".b8")){
+            input+="8"    
+        }
+        if(e.target.matches(".b9")){
+            input+="9"    
+        }
+        if(e.target.matches(".b0")){
+            input+="0"    
+        }
+        if(e.target.matches(".bDot")){
+            input+="."    
+        }
+        if(e.target.matches(".plus")){
+            input+="+"
+        }
+        if(e.target.matches(".minus")){
+            input+="-"
+        }
+        if(e.target.matches(".multi")){
+            input+="*"
+        }
+        if(e.target.matches(".split")){
+            input+="/"
+        }
+        if(e.target.matches(".delete")){
+            input=""
+        }
+        if(e.target.matches(".bR")){
+            let result = new Function("return "+input)()
+            input=result
+        }
+        $screen.innerHTML=(input)
+    })   
+}
