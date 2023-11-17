@@ -1,41 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kdam+Thmor+Pro&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    background-color: #01092F;
+
+}
 
 /*********HEADER**********/
 
-header h1{
+header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-/******APP CONTAINER*****/
-.app-container{
-    border: 1px solid black;
-    margin-left: 38%;
-    margin-right: 38%;
+    overflow-x: hidden;
+    margin: 1rem 0 3rem 0;
     
 }
+header h1{
+    text-align: center;
+    padding-top: 1.5rem;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 20px #8a4df3, 0 0 20px #8a4df3;
+    width: 350px;
+    border-radius: 10px;
+    font-family: Agbalumo;
+    color: #fff;
+    text-shadow:0 0 10px red, 0 0 20px red ;
+}
+
+/******APP CONTAINER********/
+.app-container{
+    display: flex;
+    justify-content: center;
+}
+/*************APP************/
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow:inset 0 0 10px #0820BB,0 0 10px #0820BB;
+    width: 340px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/******SCREEN CONTAINER*******/
+.screen-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #8a4df3,inset 0 0 50px #0820BB;
+    margin: 15px;
+    border-radius: 8px;
+}
+.screen{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 60px;
+    overflow-x:auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    color: #fff;
+    text-shadow: 0 0 20px #DA41E0, 0 0 20px #DA41E0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Kdam Thmor Pro;
+    letter-spacing: 2px;
+}
+
+/*******SYMBOLS CONTAINER********/
+
+.symbols-container{
+    display: grid;
+    justify-content: space-around;
+    grid-auto-columns: 45px;
+    box-shadow: 0 0 15px #0820BB,inset 0 0 10px #0820BB;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+    padding: 10px;
+}
+/************SYMBOLS************/
+
+.symbols{
+    height: 45px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: none;
+    border-style: none;
+    background-color: #01092F;
+    border: 0.2px solid #ffffff4d;
+    color: #fff;
+}
+.s1{
+    grid-column: 1;
+}
+.s2{
+    grid-column: 2;
+}
+.s3{
+    grid-column: 3;
+}
+.s4{
+    grid-column: 4;
+}
+.s5{
+    grid-column: 5;
+}
+
 /*******NUMBERS CONTAINER******/
 .numbers-container{
     display: grid;
-    grid-auto-columns: 80px;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;   
+    grid-auto-columns: 80px;
+    padding: 1rem;
+    border: 1px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 15px #923BCF,inset 0 0 15px #923BCF;
+    border-radius: 10px;
+    margin: 15px;
 }
+
+/***********NUMBERS**********/
 .buttons{
     
-    margin: 2px;
+    margin: 3px;
     padding: 1.8rem;
     border-radius: 8rem;
     cursor: pointer;
+    border: none;
+    background: none;
+    border: 1px solid #ffffff2e;
+    color: #fff;
 }
 
 .b1{
@@ -48,5 +156,34 @@ header h1{
     grid-column: 3/4;
 }
 .b10{
-    grid-column: 2;
+    grid-column: 1;
+}
+
+.symbols:hover{
+    background-color: #071352;
+}
+.buttons:hover{
+    background-color: #071352;
+}
+.buttons:active{
+    background: none;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px #0820BB,inset 0 0 15px #0820BB;
+    
+}
+.symbols:active{
+    background: none;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 25px #DA41E0,inset 0 0 15px #DA41E0;
+    text-shadow: 0 0 25px #0820BB,inset 0 0 15px #0820BB;
+}
+.buttons.b12:active{
+    background: none;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px #DA41E0,inset 0 0 15px #DA41E0;
+}
+.symbols.s5:active{
+    background: none;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 25px #e23333,inset 0 0 25px #e04141;
 }
