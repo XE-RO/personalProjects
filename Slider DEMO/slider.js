@@ -6,6 +6,7 @@ export function sliderButtons(){
     let state=0;
     
     function rightButton(){
+        
         if(state>=($images.length-1)*300){
             state=0
         }else{
@@ -13,12 +14,16 @@ export function sliderButtons(){
         }
         $images.forEach((el)=>{
             el.style.transform=`translateX(-${state}px)`
-            // console.log(state)
-        })
-    }
-    
-    
-    function leftButton(){
+            el.style.animation=`fadeOut 0.5s ease-out`;
+            setTimeout(()=>{
+                el.style.animation=`null`},450)
+            })
+            // console.log(state) 
+            
+        }
+        
+        
+        function leftButton(){
             if(state<300){
                 state=($images.length-1)*300
             }else{
@@ -26,8 +31,11 @@ export function sliderButtons(){
             }
             $images.forEach((el)=>{
                 el.style.transform=`translateX(-${state}px)`
-                // console.log(state)
-                })
+                el.style.animation=`fadeOut 0.5s ease-out`;
+                setTimeout(()=>{
+                    el.style.animation=`null`},450)
+            // console.log(state)
+        })
     }
     
     document.addEventListener("click",(e)=>{

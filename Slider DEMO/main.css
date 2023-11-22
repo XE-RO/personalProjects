@@ -22,6 +22,7 @@ header{
     margin-top: 10%;
     margin-bottom: 10%;
     border: 5px solid black;
+    
 }
 .slider{
     position: relative;
@@ -30,12 +31,16 @@ header{
     height: 300px;
     overflow: hidden;
     
+
 }
 .covers{
     width: 300px;
-    height: 300px;
-    transition: 0.3s ease;
+    height: 300px; 
 }
+@keyframes fadeOut{
+    0% {opacity:0;}
+}
+
 .buttons{
     display: flex;
     justify-content: center;
@@ -50,7 +55,6 @@ header{
     background-image: url(./Assets/rightIcon.png);
     border-radius: 50%;
     opacity: 0.5;
-    
 }
 .left{
     left: 2px;
