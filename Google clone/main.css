@@ -4,6 +4,10 @@
     padding: 0;
     font-family: sans-serif;
 }
+html{
+    background-color: rgb(224, 224, 224);
+}
+/******HEADER (GMAIL,IMAGENES,USUARIO)******/
 .features{
     display: flex;
     justify-content: flex-end;
@@ -11,7 +15,7 @@
 }
 .features a{
     margin-left: 2rem;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     color: rgb(39, 39, 39);
 }
@@ -32,6 +36,83 @@
 .features .options{
     padding-top: 10px;
 }
+/********MENU DESPLAGABLE*********/
+.menuContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.dinamicMenu{
+    position: absolute;
+    z-index: 999;
+    display: grid;
+    border: 1px solid rgb(201, 201, 201);
+    background-color: rgb(224, 224, 224);
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.menuContainer a{
+    margin: 5px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.menuContainer .dinamicMenu p{   
+    margin-top: 63px; 
+    text-align: center;
+    font-size: 12px;
+    color: rgb(39, 39, 39);
+}
+.dinamicMenu .search{
+    background-image: url(./Assets/googleIcon.png);
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dinamicMenu .Maps{
+    background-image: url(./Assets/Maps.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dinamicMenu .youtube{
+    background-image: url(./Assets/Youtube.png);
+    background-size: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dinamicMenu .play{
+    background-image: url(./Assets/Play.png);
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dinamicMenu .Gmail{
+    background-image: url(./Assets/Gmail.png);
+    background-size: 40px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.dinamicMenu .Drive{
+    background-image: url(./Assets/Drive.png);
+    background-size: 50px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.dinamicMenu .traductor{
+    background-image: url(./Assets/gogleTranslate.png);
+    background-size: 50px;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+/***CLASE ACTIVE (MENU)***/
+.menuActive{
+    visibility: hidden;
+}
+/*****BANNER DE GOOGLE*****/
 
 .picContainer{
     display: flex;
@@ -45,12 +126,14 @@
     margin-top: 6.5rem;
 
 }
+
+/*****CONTENEDOR DE MOTOR DE BUSQUEDA*****/
 .searchContainer{
     display: flex;
     justify-content: center;
 }
 .busqueda{
-    border: 1px solid rgb(221, 221, 221) ;
+    border: 1px solid rgb(195, 195, 195) ;
     border-radius: 50px;
     padding: 4px;
 }
@@ -103,24 +186,26 @@
     padding: 10px;
     width: 150px;
     cursor: pointer;
-    background-color:rgb(230, 230, 230);
-    border: 1px solid rgb(221, 221, 221);
+    background-color:rgb(215, 215, 215);
+    border: 1px solid rgb(205, 203, 203);
     border-radius: 5px;
 }
 
+
+/*****FOOTER******/
 
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgb(228, 228, 228);
-    border: 1px solid rgb(189, 189, 189);
+    background-color: rgb(207, 207, 207);
+    border: 1px solid rgb(170, 170, 170);
 }
 footer .links{
     display: flex;
     justify-content: space-between;
     padding: 20px 10px 15px 10px;
-    border: 1px solid rgb(189, 189, 189);
+    border: 1px solid rgb(170, 170, 170);
 }
 footer h4{
     padding-left: 10px;
@@ -137,10 +222,23 @@ footer h4{
     margin-right: 10px;
 }
 
+/*****ESTILOS HOVER*****/
+
 .busqueda:hover{
     border: 1px solid rgb(215, 215, 215);
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(230, 229, 229);
 }
+.menuContainer a:hover{
+    background-color: rgb(215, 215, 215) ;
+}
+.buttons button:hover{
+    background-color: rgb(205, 205, 205);
+}
+.features a:hover{
+    text-decoration: underline;
 
+}
+.links a:hover{
+    text-decoration: underline;
 
-
+}

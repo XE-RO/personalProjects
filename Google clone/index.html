@@ -9,14 +9,24 @@
 </head>
 <header>
     <ul class="features">
-        <a href="#" class="options">Gmail</a>
-        <a href="#" class="options">Imagenes</a>
+        <a href="https://mail.google.com/" class="options">Gmail</a>
+        <a href="https://www.google.com/imghp" class="options">Imagenes</a>
         <a href="#" class="menu"></a>
         <a href="#" class="userPic"></a>
     </ul>
 </header>
 <body>
-
+    <section class="menuContainer">
+        <div class="dinamicMenu menuActive">
+            <a href="https://www.google.com/" class="search"><p>google</p></a>
+            <a href="https://maps.google.com/" class="Maps"><p>Maps</p></a>
+            <a href="https://www.youtube.com/" class="youtube"><p>Youtube</p></a>
+            <a href="https://play.google.com/" class="play"><p>Play</p></a>
+            <a href="https://mail.google.com/" class="Gmail"><p>Gmail</p></a>
+            <a href="https://drive.google.com/" class="Drive"><p>Drive</p></a>
+            <a href="https://translate.google.com/" class="traductor"><p>Traductor</p></a>
+        </div>
+    </section>
     <figure class="picContainer">
         <img class="googlePic" src="./Assets/googlepng.png" alt="Google">
     </figure>
@@ -30,26 +40,28 @@
     </section>
     <section class="buttons">    
         <button>Buscar con google</button>
-        <button>Voy a tener suerte</button>
+        <form action="https://doodles.google/">
+            <button action type="submit">Voy a tener suerte</button>
+        </form>
     </section>
     
     <footer>
-        <h4>Mexico</h4>
+        <h4>México</h4>
         <div class="links">
             <div class="acercaDe">
-                <a href="#">Sobre Google</a>
-                <a href="#">Publicidad</a>
-                <a href="#">Negocios</a>
-                <a href="#">Cómo funciona la busqueda</a>
+                <a href="https://about.google/">Sobre Google</a>
+                <a href="https://ads.google.com/">Publicidad</a>
+                <a href="https://smallbusiness.withgoogle.com/">Negocios</a>
+                <a href="https://www.google.com/search/howsearchworks/">Cómo funciona la busqueda</a>
             </div>
             <div class="info">
-                <a href="#">Privacidad</a>
-                <a href="#">Condiciones</a>
+                <a href="https://policies.google.com/">Privacidad</a>
+                <a href="https://policies.google.com/terms">Condiciones</a>
                 <a href="#">Preferencias</a>
             </div>
         </div>
     </footer>
 
-    
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
