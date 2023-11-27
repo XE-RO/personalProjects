@@ -7,6 +7,8 @@
 html{
     background-color: rgb(224, 224, 224);
 }
+
+
 /******HEADER (GMAIL,IMAGENES,USUARIO)******/
 .features{
     display: flex;
@@ -176,6 +178,7 @@ html{
 }
 
 .buttons{
+    margin-bottom: 10rem;
     display: flex;
     justify-content: center;
 }
@@ -195,7 +198,8 @@ html{
 /*****FOOTER******/
 
 footer{
-    position: absolute;
+    border: 1px solid red;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgb(207, 207, 207);
@@ -240,5 +244,4 @@ footer h4{
 }
 .links a:hover{
     text-decoration: underline;
-
 }
