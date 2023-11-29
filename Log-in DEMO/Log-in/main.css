@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*CONTENEDOR DEL MENU (HEADER)*/
+body{
+    position: relative;
+    background-color: rgb(240, 240, 240);
+
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+/*MENU*/
+
+.menu{
+    display:flex;
+    border: 1px solid red;
+    margin-left: 80px;
+}
+/*ITEMS DEL MENU*/
+li{
+    border: 1px solid red;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    margin: 20px 10px 20px 10px;
+}
+/*IMAGEN DEL MENU*/
+
+header .menu-img{
+    border: 1px solid red;
+    width: 200px;
+    height: 100px;
+}
+/*CONTENEDOR DEL FORMULARIO*/
+.form-container{
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.form-and-inputs{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+.form-and-inputs input{
+    margin-bottom: 1rem;
+    height: 50px;
+    padding: 10px;
+}
+.form-and-inputs #submit-button{
+    cursor: pointer;
+}
+.form-and-inputs h1{
+    margin-bottom: 1rem;
+
+}
+
+.footer-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-around; /*CAMBIAR=> SPACE BETWEEN*/
+}
+.footer-container p{
+    width: 800px;
+    margin-top: 5rem;
+}
