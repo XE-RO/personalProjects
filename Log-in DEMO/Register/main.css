@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+/*CONTENEDOR DEL MENU SUPERIOR*/
+.menu-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+.menu-container img{
+    width: 200px;
+    height: 100px;
+    margin-right: 5rem;
+    border: 1px solid red;
+}
+.menu-options{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    display: flex;
+}
+.menu-options li{
+    margin: 10px 20px 10px 20px;
+
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    padding-top: 10rem ;
+    padding-bottom: 10rem ;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    padding: 5px;
+    margin-top: 5px;
+    width:300px;
+    height: 50px;
+}
+form #submit-button{
+    cursor: pointer;
+    margin-top: 2rem;
+}
