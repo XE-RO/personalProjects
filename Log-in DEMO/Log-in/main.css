@@ -6,35 +6,44 @@
 }
 /*CONTENEDOR DEL MENU (HEADER)*/
 body{
-    position: relative;
+    
     background-color: rgb(240, 240, 240);
 
 }
+
+
+
+    
+
+
 .menu-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border: 1px solid red;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
-}
+    overflow-x: scroll;    
+} 
 
 /*MENU*/
 
 .menu{
     display:flex;
     border: 1px solid red;
-    margin-left: 80px;
+    
 }
 /*ITEMS DEL MENU*/
-li{
+.menu li{
     border: 1px solid red;
     list-style: none;
-    text-decoration: none;
     padding-top: 20px;
     padding-left: 20px ;
     padding-right: 20px ;
     margin: 20px 10px 20px 10px;
+}
+
+.menu a{
+    text-decoration: none;
 }
 /*IMAGEN DEL MENU*/
 
@@ -45,12 +54,14 @@ header .menu-img{
 }
 /*CONTENEDOR DEL FORMULARIO*/
 .form-container{
+    width: 100%;
     display: flex;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
     justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     border: 1px solid red;
 }
+
 
 .form-and-inputs{
     display: flex;
@@ -58,9 +69,8 @@ header .menu-img{
     flex-direction: column;
 }
 .form-and-inputs input{
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
     height: 50px;
-    padding: 10px;
 }
 .form-and-inputs #submit-button{
     cursor: pointer;
@@ -75,7 +85,8 @@ header .menu-img{
     display: flex;
     justify-content: space-around; /*CAMBIAR=> SPACE BETWEEN*/
 }
+
 .footer-container p{
-    width: 800px;
+    width: 200px;
     margin-top: 5rem;
 }
