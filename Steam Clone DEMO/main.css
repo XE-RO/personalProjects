@@ -10,10 +10,12 @@ html{
     background:linear-gradient(70deg,#2A475E,#1B2838);
 }
 
+/* MENU CONTAINER */
 .menu-container{
     background-color: #1B2838;
     padding-right: 10rem;
 }
+/*SESION AND DOWNLOAD SECTION*/
 .download-login{
     display: flex;
     justify-content: flex-end;
@@ -32,6 +34,13 @@ html{
     background-repeat: no-repeat;
     background-image: url('https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1');
 }
+.download-login a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/* STEAM MENU */
 .menu-container .menu{
     display: flex;
     justify-content: center;
@@ -39,11 +48,7 @@ html{
     margin-right: 5rem;
     
 }
-.download-login a{
-    text-decoration: none;
-    margin: 10px;
-}
-
+/* STEAM MENU OPTIONS*/
 .menu-container .menu a{
     text-decoration: none;
     margin-left: 20px;
@@ -54,6 +59,7 @@ html{
     padding-bottom: 50px;
     
 }
+/*STEAM MENU IMAGE*/
 .menu-container .steam-icon{
     padding: 20px 200px 20px 0px;
     background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016);
@@ -61,60 +67,290 @@ html{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*SLIDER CONTAINER*/
+
 .slider-container{
     display: flex;
     justify-content: center;
     border:1px solid red;
+    
 }
-#n1{
+.slider{
+    border: 1px solid red;
+    position: relative;
+}
+/*VISUALIZADOR*/
+
+#visualizer{
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    border:1px solid red;
+    width: 915px;
+    overflow-x:hidden;
+    border:1px solid blueviolet;
+    transition: ease 0.5s;
 }
 
-#n1 .game1{
-    padding: 0 600px 400px 0px;
+/*DIAPOSITIVA #1*/
+#Game1{
+    display: flex;
+    width: 913px;
+    height: 417px;
+    background-color: #0E141B;
+}
+
+/*GAME IMAGE*/
+
+#visualizer #Game1 .game1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    padding: 0px 600px 0px 0px;
     background-image: url(https://cdn1.epicgames.com/offer/9bcf5a4dc1d54cb6ab1a42f3a70c5cf4/Share_Image_1920x1080_1920x1080-3ec6b92b109d6ebe190c7fd8da23b989);
+    background-size: 600px;
+    background-color: #5c7e10;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*  INDEX */
+.indexContainer{
+   position:absolute;
+   display: flex;
+   justify-content: center;
+   border: 1px solid red;
+   width: 608px;
+   top: 385px;
+   
+}
+.indexContainer .indexButtons{
+    /* background-color: #30516d;
+    background-color: #A7BACC; */
+
+    background-color: #30516d;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 10px;
+    border-radius: 2px;
+    transition: all ease 0.5s;
+}
+.indexContainer .indexButtons:hover{
+    background-color: #A7BACC;
+    transition: all ease 0.3s;
+}
+
+   
+
+
+/*TABLA MINIATURAS*/
+
+#Game1 .min-grid{
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 90px 90px 90px;
+    margin: 70px 10px 70px 10px;
+    border: 1px solid red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 6px;
+}
+
+/*SEPARACION ENTRE DIAPOSITIVAS*/
+#Game1 .min-grid a{
+    margin: 5px;
+}
+
+/*TEXTO EN TABLA*/
+#visualizer #Game1 .min-grid h1{
+    grid-column: 1/3;
+    padding: 30px 0px 0px 10px;
+}
+
+/*MINIATURAS 1-4*/
+#visualizer #Game1 .min-grid .min1{
+    background-image: url(https://sm.ign.com/ign_latam/gallery/a/assassins-/assassins-creed-mirage-official-screenshots_q3sn.jpg);
+    background-size: 150px;
+    background-position: center;
+}
+#visualizer #Game1 .min-grid .min2{
+    background-image: url(https://assetsio.reedpopcdn.com/assassins-creed-mirage-headline-gameplay.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp);
+    background-size: 150px;
+    background-position: center;
+}
+#visualizer #Game1 .min-grid .min3{
+    background-image: url(https://i.blogs.es/a693d3/fkg-2cfwqaigzd0/450_1000.webp);
+    background-size: 150px;
+    background-position: center;
+}
+#visualizer #Game1 .min-grid .min4{
+    background-image: url(https://web54.pro/wp-content/uploads/2022/12/1.-Header-1.jpg);
+    background-size: 150px;
+    background-position: center;
+}
+
+
+
+/*DIAPOSITIVA #2*/
+#Game2{
+    display: flex;
+    width: 913px;
+    height: 417px;
+    background-color: #0E141B;
+
+}
+
+/*GAME IMAGE*/
+#visualizer #Game2 .game2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 600px 0px 0px;
+    background-image: url(https://sm.ign.com/t/ign_latam/screenshot/default/screen-shot-2022-08-31-at-102826-am_xjp3.1280.png);
     background-size: 600px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.min-grid{
+/*TABLA MINIATURAS*/
+
+#Game2 .min-grid{
     display: grid;
     justify-content: flex-end;
     grid-template-columns: 150px 150px;
     grid-template-rows: 90px 90px 90px;
-    margin-bottom: 70px;
     margin: 70px 10px 70px 10px;
     border: 1px solid red;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 6px;
 }
-.min-grid a{
+
+/*SEPARACION ENTRE DIAPOSITIVAS*/
+#Game2 .min-grid a{
     margin: 5px;
 }
-#n1 .min-grid h1{
+
+/*TEXTO EN TABLA*/
+#visualizer #Game2 .min-grid h1{
     grid-column: 1/3;
-    padding: 2rem;
+    padding: 30px 0px 0px 10px;
 }
-#n1 .min-grid .min1{
-    background-image: url(https://sm.ign.com/ign_latam/gallery/a/assassins-/assassins-creed-mirage-official-screenshots_q3sn.jpg);
+
+/*MINIATURAS 1-4*/
+#visualizer #Game2 .min-grid .min1{
+    background-image: url(https://s.yimg.com/uu/api/res/1.2/n.oGzeisSMu4mt6vVCzHtQ--~B/Zmk9ZmlsbDtoPTEzODk7dz0yNDcwO2FwcGlkPXl0YWNoeW9u/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-08/dcb38c70-28a6-11ed-a77f-d92be29b5fc1.cf.jpg);
     background-size: 150px;
     background-position: center;
 }
-#n1 .min-grid .min2{
-    background-image: url(https://assetsio.reedpopcdn.com/assassins-creed-mirage-headline-gameplay.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp);
+#visualizer #Game2 .min-grid .min2{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/55ef0e29e4b099e22cdc9eea/608b0160-fc7c-47b1-9cb2-f023e9742869/ss2.jpg);
     background-size: 150px;
     background-position: center;
 }
-#n1 .min-grid .min3{
-    background-image: url(https://i.blogs.es/a693d3/fkg-2cfwqaigzd0/450_1000.webp);
+#visualizer #Game2 .min-grid .min3{
+    background-image: url(https://www.playstationlifestyle.net/wp-content/uploads/sites/9/2023/02/images-5.jpeg?w=640);
     background-size: 150px;
     background-position: center;
 }
-#n1 .min-grid .min4{
-    background-image: url(https://web54.pro/wp-content/uploads/2022/12/1.-Header-1.jpg);
+#visualizer #Game2 .min-grid .min4{
+    background-image: url(https://img.gamewith.net/article/thumbnail/rectangle/18247.png);
     background-size: 150px;
     background-position: center;
 }
+
+
+/*DIAPOSITIVA #3*/
+#Game3{
+    display: flex;
+    width: 913px;
+    height: 417px;
+    background-color: #0E141B;
+
+}
+
+/*GAME IMAGE*/
+#visualizer #Game3 .game3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 600px 0px 0px;
+    background-image: url(https://pbs.twimg.com/media/FY0dAaGUIAEVLt1?format=jpg&name=large);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*TABLA MINIATURAS*/
+
+#Game3 .min-grid{
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 90px 90px 90px;
+    margin: 70px 10px 70px 10px;
+    border: 1px solid red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 6px;
+}
+
+/*SEPARACION ENTRE DIAPOSITIVAS*/
+#Game3 .min-grid a{
+    margin: 5px;
+}
+
+/*TEXTO EN TABLA*/
+#visualizer #Game3 .min-grid h1{
+    grid-column: 1/3;
+    padding: 30px 0px 0px 10px;
+}
+
+/*MINIATURAS 1-4*/
+#visualizer #Game3 .min-grid .min1{
+    background-image: url(https://www.gamespot.com/a/uploads/original/1639/16394322/4043425-4041864-ovr_pk_betaannounce_pushgameplay_002.jpeg);
+    background-size: 150px;
+    background-position: center;
+    
+}
+#visualizer #Game3 .min-grid .min2{
+    background-image: url(https://cdn.mos.cms.futurecdn.net/RSPyuAEeziwY6TMfjvPHoJ.jpg);
+    background-size: 150px;
+    background-position: center;
+}
+#visualizer #Game3 .min-grid .min3{
+    background-image: url(https://images0.persgroep.net/rcs/FkDXAAiEdHTHCboeL_g4LMssSHw/diocontent/221610057/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8);
+    background-size: 150px;
+    background-position: center;
+}
+#visualizer #Game3 .min-grid .min4{
+    background-image: url(https://cdn.akamai.steamstatic.com/steam/apps/2357570/ss_9f00f1ee2c60dda39f4813aa6b252cf9331ecb97.1920x1080.jpg?t=1701803297);
+    background-size: 150px;
+    background-position: center;
+}
+
+/* RIGHT AND LEFT BUTTONS */
+.slider-container .button-slider-left{
+    margin-top: 10rem;
+    background-image: url(./Assets/left.png);
+    background-repeat: no-repeat;
+    background-color: #30516d;
+    background-size: 30px;
+    background-position: center;
+    width: 30px;
+    height: 80px;
+    padding: 5px;
+}
+.slider-container .button-slider-right{
+    margin-top: 10rem;
+    background-image: url(./Assets/right.png);
+    background-repeat: no-repeat;
+    background-color: #30516d;
+    background-size: 30px;
+    background-position: center;
+    width: 30px;
+    height: 80px;
+    padding: 5px;
+}
+
