@@ -8,6 +8,8 @@
 html{
     height: 100%;
     background:linear-gradient(70deg,#2A475E,#1B2838);
+    width: auto;
+    overflow-x: hidden;
 }
 
 /* MENU CONTAINER */
@@ -73,7 +75,7 @@ html{
 .slider-container{
     display: flex;
     justify-content: center;
-    border:1px solid red;
+    
     
 }
 .slider{
@@ -96,7 +98,7 @@ html{
    position:absolute;
    display: flex;
    justify-content: center;
-   border: 1px solid red;
+   
    width: 608px;
    top: 385px;
    
@@ -116,6 +118,36 @@ html{
 }
 
 
+@media (max-width:1024px){
+    #visualizer{  
+        overflow-x: scroll;
+        margin: 50px;
+    }
+
+    #visualizer #Game1 .game1{
+        
+        width: auto;  
+        margin-right:150px;
+        margin-left: 150px;
+    }
+    #visualizer #Game2 .game2{
+        width: auto;
+        margin-left:150px;
+        margin-right:150px;
+    }
+    #visualizer #Game3 .game3{
+        width: auto;
+        margin-left: 150x;
+        margin-right:150px;
+    }
+    .slider-container .button-slider-left{
+        visibility: hidden;
+    }
+    .slider-container .button-slider-right{
+        visibility: hidden;
+    }
+}
+
 /*DIAPOSITIVA #1*/
 #Game1{
     display: flex;
@@ -133,7 +165,7 @@ html{
     padding: 0px 600px 0px 0px;
     background-image: url(https://cdn1.epicgames.com/offer/9bcf5a4dc1d54cb6ab1a42f3a70c5cf4/Share_Image_1920x1080_1920x1080-3ec6b92b109d6ebe190c7fd8da23b989);
     background-size: 600px;
-   
+    
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -149,7 +181,7 @@ html{
     grid-template-columns: 150px 150px;
     grid-template-rows: 90px 90px 90px;
     margin: 70px 10px 70px 10px;
-    border: 1px solid red;
+    
     background-color: #1B2838;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -221,7 +253,7 @@ html{
     grid-template-columns: 150px 150px;
     grid-template-rows: 90px 90px 90px;
     margin: 70px 10px 70px 10px;
-    border: 1px solid red;
+    
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 5px;
@@ -291,7 +323,7 @@ html{
     grid-template-columns: 150px 150px;
     grid-template-rows: 90px 90px 90px;
     margin: 70px 10px 70px 10px;
-    border: 1px solid red;
+    
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 5px;
